@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Your future job</title>
+  </head>
+
+  <body>
+    <center><h1>
+      Find your future job!
+    </h1></center>
+    <table style="width:60%", align = "center", border = "1">
+      <tr>
+	<td>
+	  <center><b><u>Jobs</u></b></center>
+	</td>
+	<td>
+	  <center><b><u>Percentage</u></b></center>
+	</td>
+      {% for item, something in too %}
+      <tr>
+	<td>
+	  {{item}}
+	</td>
+	<td>
+	  {{something}}
+	</td>
+      </tr>
+      {% endfor %}
+    </table>
+    <br>
+    <b><center>Your Job:     {{foo}}</center></b>
+    <br>
+    <a href={{they}}>CHECK THIS OUT</a>
+  </body>
+  
+</html>
