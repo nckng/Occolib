@@ -1,2 +1,2 @@
 # Occolib
-Run thing.py
+Run app.py
