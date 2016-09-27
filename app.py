@@ -1,6 +1,6 @@
 
 from flask import Flask, render_template
-import occupations
+from utils import occupations
 
 app = Flask(__name__)
 
@@ -12,7 +12,7 @@ def yello():
 @app.route("/occupations")
 def test_tmplt():
 
-    return render_template( 'model_tmplt.html', foo=occupations.randomizer(),too = bello().items())
+    return render_template( 'model_tmplt.html', foo=occupations.randomizer(),too = bello().items(),they='https://www.wikipedia.org')
     
 if __name__ == "__main__":
     #enable debugging, auto-restarting of server when this file is modified

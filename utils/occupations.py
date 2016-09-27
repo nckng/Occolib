@@ -1,7 +1,7 @@
 import random
 
 OCUPATIONES = {}
-occupashuns = open("occupations.csv", "rU")
+occupashuns = open("data/occupations.csv", "rU")
 
 occupashuns.readline()
 for line in occupashuns:
@@ -34,7 +34,7 @@ def randomizer():
         if (randnumba < ranges[i]):
             randrange = i
             break
-    return OCUPATIONES.keys()[i] + ", " + percentz[i] + "%"
+    return OCUPATIONES.keys()[i]
 
 
 print randomizer()
